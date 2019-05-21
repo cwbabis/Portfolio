@@ -1,0 +1,186 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <!-- Video Section -->
+    <header class="v-header container">
+        <div class="fullscreen-video-wrap">
+            <video src="TwistedLines.mp4" autoplay="true" loop="true" muted="true"></video>
+        </div>
+        <div class="header-overlay">
+        </div>
+        <div class="header-content flex row">
+            <h1 class="col-sm-12">Hello, I'm <span class="highlight">Christopher Babis</span></h1>
+            <h1 class="col-sm-12">I'm a full-stack web developer.</h1>
+        </div>
+    </header>
+    <!-- Navbar -->
+    <div id="navigation-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">About</a>
+                    <a class="nav-item nav-link" href="#">Projects</a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navigation-bar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <!-- About Section-->
+    <header class="about-section container">
+
+        <div class="about-overlay">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="about-header">About</h1>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum id
+                        pariatur officia quidem et, delectus facilis quasi reprehenderit omnis qui dolore corporis
+                        dicta. Reprehenderit totam dolore molestias recusandae architecto facere quos distinctio labore
+                        nobis non repellat obcaecati officiis nulla perferendis, doloribus dolor est consequuntur at
+                        alias id, nemo iste. Eligendi culpa accusantium, porro in quis odio sint tempora ex dolore quasi
+                        esse atque dicta dolor libero. Vitae porro hic facilis, numquam tempora, natus aspernatur
+                        necessitatibus animi accusantium reprehenderit excepturi beatae doloremque ipsum odit
+                        repellendus non quisquam. Impedit adipisci dicta distinctio quos eligendi quod error saepe,
+                        voluptates excepturi est velit delectus deleniti doloribus, laudantium voluptas illo cum itaque
+                        consequuntur! Nesciunt, quia. Reiciendis officia, itaque quo aut consequatur laudantium, soluta
+                        eius mollitia earum blanditiis alias perspiciatis hic ad ex rem odit eaque voluptates impedit!
+                        Praesentium modi aspernatur obcaecati? Accusamus culpa quis, fuga alias porro deleniti. Nostrum
+                        rerum ipsa, modi vel autem sapiente?</p>
+                </div>
+                <div class="col-sm-6">
+                    <p class="about-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit rerum
+                        sint blanditiis saepe corrupti maiores, totam nihil ullam, facilis enim necessitatibus eos
+                        fugiat aliquid incidunt harum cum. Obcaecati accusantium nostrum deserunt reprehenderit qui
+                        labore repudiandae optio, unde voluptatem facere officiis dolor corporis consectetur, temporibus
+                        facilis incidunt vel! Placeat facilis quisquam ea eos veniam non, enim repellendus cum ipsam
+                        iste? Reprehenderit ducimus voluptates quos debitis molestias ullam suscipit. Id eligendi quo
+                        vitae mollitia aut nemo eos labore facilis expedita. Architecto quas aperiam repellat iste
+                        voluptas, ad provident placeat laborum modi soluta voluptatibus natus at, cumque blanditiis
+                        nesciunt libero laboriosam officiis aliquam itaque. Eius veritatis corrupti in odit deserunt
+                        exercitationem. A at nulla iste quod illum animi numquam nostrum quis non aut atque voluptates
+                        beatae explicabo earum odit, sed sint qui magni excepturi facilis commodi. Quibusdam voluptatem
+                        odit, a ad eveniet recusandae in quisquam nesciunt omnis nihil, sunt ducimus minima laboriosam
+                        praesentium!</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- Project Section-->
+    <header class="project-background container">
+
+        <div class="project-section flex">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="project-header">Projects</h1>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="project-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum id
+                        pariatur officia quidem et, delectus facilis quasi reprehenderit omnis qui dolore corporis
+                        dicta. Reprehenderit totam dolore molestias recusandae architecto facere quos distinctio labore
+                        nobis non repellat obcaecati officiis nulla perferendis, doloribus dolor est consequuntur at
+                        alias id, nemo iste. Eligendi culpa accusantium, porro in quis odio sint tempora ex dolore quasi
+                        esse atque dicta dolor libero. Vitae porro hic facilis, numquam tempora, natus aspernatur
+                        necessitatibus animi accusantium reprehenderit excepturi beatae doloremque ipsum odit
+                        repellendus non quisquam. Impedit adipisci dicta distinctio quos eligendi quod error saepe,
+                        voluptates excepturi est velit delectus deleniti doloribus, laudantium voluptas illo cum itaque
+                        consequuntur! Nesciunt, quia. Reiciendis officia, itaque quo aut consequatur laudantium, soluta
+                        eius mollitia earum blanditiis alias perspiciatis hic ad ex rem odit eaque voluptates impedit!
+                        Praesentium modi aspernatur obcaecati? Accusamus culpa quis, fuga alias porro deleniti. Nostrum
+                        rerum ipsa, modi vel autem sapiente?</p>
+                </div>
+                <div class="col-sm-6">
+                    <p class="project-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit rerum
+                        sint blanditiis saepe corrupti maiores, totam nihil ullam, facilis enim necessitatibus eos
+                        fugiat aliquid incidunt harum cum. Obcaecati accusantium nostrum deserunt reprehenderit qui
+                        labore repudiandae optio, unde voluptatem facere officiis dolor corporis consectetur, temporibus
+                        facilis incidunt vel! Placeat facilis quisquam ea eos veniam non, enim repellendus cum ipsam
+                        iste? Reprehenderit ducimus voluptates quos debitis molestias ullam suscipit. Id eligendi quo
+                        vitae mollitia aut nemo eos labore facilis expedita. Architecto quas aperiam repellat iste
+                        voluptas, ad provident placeat laborum modi soluta voluptatibus natus at, cumque blanditiis
+                        nesciunt libero laboriosam officiis aliquam itaque. Eius veritatis corrupti in odit deserunt
+                        exercitationem. A at nulla iste quod illum animi numquam nostrum quis non aut atque voluptates
+                        beatae explicabo earum odit, sed sint qui magni excepturi facilis commodi. Quibusdam voluptatem
+                        odit, a ad eveniet recusandae in quisquam nesciunt omnis nihil, sunt ducimus minima laboriosam
+                        praesentium!</p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- Footer -->
+    <footer>
+        <div class="social-link-bar">
+            <div>
+                <i class="fas fa-3x fa-caret-square-up flex row" dest="home"></i>
+            </div>
+            <div class="flex row social">
+                <a class="fab fa-3x fa-linkedin icon-wrap" href="https://www.linkedin.com/in/christopher-babis/"></a>
+                <a class="fab fa-3x fa-facebook-square icon-wrap" href="https://www.facebook.com/ChrisBabis"></a>
+                <a class="fab fa-3x fa-github-square icon-wrap" href="https://github.com/cwbabis"></a>
+                <a class="fab fa-3x fa-stack-overflow icon-wrap"
+                    href="https://stackoverflow.com/users/10891839/cwbabis?tab=profile"></a>
+            </div>
+            <div class="info-box">
+                <div class="footnote">
+                    Christopher Babis <span class="highlight">©2019</span>
+                </div>
+            </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
