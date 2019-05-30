@@ -23,6 +23,7 @@ body {
   color: white;
   overflow-x: hidden;
   text-align: center;
+  font-family: 'Oxygen', sans-serif;
 }
 
 .v-header {
@@ -167,12 +168,6 @@ body {
 
 /*About Section*/
 
-/* .about-section{
-  height:100vh;
-  display:flex;
-  padding: 70px 0 70px 0;
-} */
-
 .about-header {
   color: black;
   justify-content: center;
@@ -192,7 +187,7 @@ body {
 }
 
 .box-sm {
-  height: 5px;
+  height: 3.5px;
   margin: 0;
   flex-grow: 1.5;
   transition: all .8s ease-in-out;
@@ -209,8 +204,8 @@ body {
   align-items: center;
 }
 
-.aqua {
-  background-color: aqua;
+.lightblue {
+  background-color: #92c5ff;
 }
 
 .bluegrey {
@@ -331,6 +326,10 @@ div.gallery:hover {
 
 .contact-header {
   padding-top: 70px;
+}
+
+.btn-primary {
+  background-color: #92c5ff;
 }
 
 /*---------------------------------------------*/
@@ -728,7 +727,7 @@ textarea.input2+.focus-input2::after {
 /*Return Home Button*/
 
 footer .fa-caret-square-up {
-  color: aqua;
+  color: #92c5ff;
   top: -25px;
   margin: 0 auto;
   left: 0;
@@ -753,12 +752,6 @@ footer .fa-caret-square-up {
 .fab {
   color: white;
 }
-
-/* shitwontwork */
-
-/* .social.fa-linkedin:hover{
-  color: red;
-} */
 
 .flex.row {
   flex-direction: row;
@@ -786,7 +779,11 @@ footer .fa-caret-square-up {
 /*Highlighter*/
 
 .highlight {
-  color: aqua;
+  color: #04C2C9;
+}
+
+.highlight2 {
+  color: #92c5ff
 }
 
 /* MEDIA QUERY TEMPLATE */
@@ -807,27 +804,17 @@ footer .fa-caret-square-up {
 
 @media only screen and (max-width: 320px) {
   /* Styles */
+  .project-background {
+    padding-top: 50px;
+    padding-bottom: 130px;
+    height: 100vh;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Styles */
-  .zoom-effect-container {
-    height: 100px;
-    width: 100px;
-  }
-  .contact-section {
-    /* background-color: #1B242F; */
-    height: 75vh;
-    padding: 0px 350px 0 350px;
-  }
-  .img__description {
-    line-height: 14;
-    /* transition effect. not necessary */
-    /* 
-        transition: opacity .2s, visibility .2s; */
-  }
 }
 
 /* iPads (landscape) ----------- */
@@ -847,6 +834,9 @@ footer .fa-caret-square-up {
 @media only screen and (min-width: 1224px) {
   /* Styles */
   @media screen and (min-width: 1025px) and (max-width: 1500px) {
+    body {
+      background-color: pink;
+    }
     .zoom-effect-container {
       height: 215px;
       width: 280px;
@@ -866,10 +856,39 @@ footer .fa-caret-square-up {
 
 @media only screen and (min-width: 1824px) {
   /* Styles */
-}
-
-/* iPhone 4 ----------- */
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* Styles */
+  .contact-header {
+    padding-top: 70px;
+  }
+  /* iPhone 4 ----------- */
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+    /* Styles */
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1300px) {
+    body {
+      background-color: red;
+    }
+    .project-background {
+      padding-top: 50px;
+    }
+    .zoom-effect-container {
+      height: 185px;
+      width: 240px;
+    }
+    .about-section {
+      padding-top: 20px;
+    }
+    .contact-question {
+      padding: 20px;
+    }
+  }
+  @media screen and (max-width:860px) {
+    body {
+      background-color: yellow;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: orange;
+    }
+  }
 }

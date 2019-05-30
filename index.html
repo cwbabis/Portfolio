@@ -8,7 +8,9 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <title></title>
 </head>
@@ -68,17 +70,16 @@
 
             <div class="row">
                 <div class="col-sm-12">
-                    <h1 class="about-header" data-aos="fade-left" data-aos-offset="800"
-                    data-aos-easing="ease-in-sine">About</h1>
+                    <h1 class="about-header" data-aos="fade-left" data-aos-offset="800" data-aos-easing="ease-in-sine">
+                        About</h1>
                 </div>
             </div>
-            <div class="post" data-aos="fade-right" data-aos-offset="800"
-            data-aos-easing="ease-in-sine">
+            <div class="post" data-aos="fade-right" data-aos-offset="800" data-aos-easing="ease-in-sine">
                 <div class="box">
                     <div class="box-sm bluegrey"></div>
-                    <div class="box-sm aqua"></div>
+                    <div class="box-sm lightblue"></div>
                     <div class="box-sm bluegrey"></div>
-                    <div class="box-sm aqua"></div>
+                    <div class="box-sm lightblue"></div>
                     <div class="box-sm bluegrey"></div>
                 </div>
             </div>
@@ -86,8 +87,8 @@
             </div>
             <div class="row">
                 <div class="col-sm-6">
-                    <p class="about-content" data-aos="fade-right" data-aos-offset="800"
-                    data-aos-easing="ease-in-sine">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum id
+                    <p class="about-content" data-aos="fade-right" data-aos-offset="800" data-aos-easing="ease-in-sine">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum id
                         pariatur officia quidem et, delectus facilis quasi reprehenderit omnis qui dolore corporis
                         dicta. Reprehenderit totam dolore molestias recusandae architecto facere quos distinctio labore
                         nobis non repellat obcaecati officiis nulla perferendis, doloribus dolor est consequuntur at
@@ -102,21 +103,78 @@
                         rerum ipsa, modi vel autem sapiente?</p>
                 </div>
                 <div class="col-sm-6">
-                    <p class="about-content" data-aos="fade-left" data-aos-offset="800"
-                    data-aos-easing="ease-in-sine">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit rerum
-                        sint blanditiis saepe corrupti maiores, totam nihil ullam, facilis enim necessitatibus eos
-                        fugiat aliquid incidunt harum cum. Obcaecati accusantium nostrum deserunt reprehenderit qui
-                        labore repudiandae optio, unde voluptatem facere officiis dolor corporis consectetur, temporibus
-                        facilis incidunt vel! Placeat facilis quisquam ea eos veniam non, enim repellendus cum ipsam
-                        iste? Reprehenderit ducimus voluptates quos debitis molestias ullam suscipit. Id eligendi quo
-                        vitae mollitia aut nemo eos labore facilis expedita. Architecto quas aperiam repellat iste
-                        voluptas, ad provident placeat laborum modi soluta voluptatibus natus at, cumque blanditiis
-                        nesciunt libero laboriosam officiis aliquam itaque. Eius veritatis corrupti in odit deserunt
-                        exercitationem. A at nulla iste quod illum animi numquam nostrum quis non aut atque voluptates
-                        beatae explicabo earum odit, sed sint qui magni excepturi facilis commodi. Quibusdam voluptatem
-                        odit, a ad eveniet recusandae in quisquam nesciunt omnis nihil, sunt ducimus minima laboriosam
-                        praesentium!</p>
+                    <canvas style="width: 590px; height: 400px;"id="myChart" class="about-content" data-aos="fade-left" data-aos-offset="800"
+                        data-aos-easing="ease-in-sine">
+
+                    </canvas>
                 </div>
+                <script>
+                    let myChart = document.getElementById("myChart").getContext("2d");
+
+                    Chart.defaults.global.defaultFontFamily = "Lato";
+
+                    let skillsChart = new Chart(myChart, {
+                        type: "horizontalBar",
+                        data: {
+                            labels: ["CSS", "HTML", "React", "JavaScript", "Node.js", "UI Design", "Photoshop", "MongoDB", "Git", "MySQL", "Express"],
+                            datasets: [{
+                                label: 'Percentage',
+                                data: [50, 70, 50, 80, 30, 20, 15, 80, 90, 50, 50
+                                ],
+                                backgroundColor: ["#04C2C9", "#1B242F", "#04C2C9", "#1B242F", "#04C2C9", "#1B242F", "#04C2C9", "#1B242F", "#04C2C9", "#1B242F", "#04C2C9",]
+
+                            }],
+                            borderWidth: 3,
+                            borderColor: "#333",
+                            hoverBorderWidth: 3
+                        },
+                        options: {
+                            layout: {
+                                padding: {
+                                    left: 100,
+                                    right: 50,
+                                    top: 20,
+                                    bottom: 10
+                                }
+                            },
+                            animation: {
+                                duration: 4000,
+                                easing: 'linear'
+
+                            },
+                            legend: {
+                                display: false
+
+                            },
+                            tooltips: {
+                                enabled: false
+                            },
+                            scales: {
+                                xAxes: [{
+                                    display: false,
+                                    ticks: {
+                                        beginAtZero: true,
+                                    },
+                                    gridLines: {
+                                        color: "rgba(0, 0, 0, 0)",
+                                        
+                                    },
+                                }],
+                                yAxes: [{
+                                    
+                                    gridLines: {
+                                        color: "rgba(0, 0, 0, 0)",
+
+                                    },
+                                    barThickness: 30,
+                                    barPercentage: .1
+                                }]
+                            },
+
+
+                        }
+                    });
+                </script>
             </div>
         </div>
         </div>
@@ -127,22 +185,16 @@
             data-aos-easing="ease-in-sine">
             <h1>Projects </h1>
         </div>
-
-
         <!-- <hr data-aos="fade-left" data-aos-offset="800" data-aos-easing="ease-in-sine" data-aos-anchor="#projects" style="margin-top: 25px; margin-bottom: 100px;"> -->
         <div class="post" data-aos="fade-right" data-aos-offset="800" data-aos-easing="ease-in-sine">
             <div class="box">
                 <div class="box-sm bluegrey"></div>
-                <div class="box-sm aqua"></div>
+                <div class="box-sm lightblue"></div>
                 <div class="box-sm bluegrey"></div>
-                <div class="box-sm aqua"></div>
+                <div class="box-sm lightblue"></div>
                 <div class="box-sm bluegrey"></div>
             </div>
         </div>
-
-
-
-
         <section data-aos="fade-in" data-aos-offset="800" data-aos-easing="ease-in-sine">
             </div>
             <div class="row" style="justify-content: center;">
@@ -216,19 +268,23 @@
                     <h1 class="contact-header" data-aos="fade-right" data-aos-offset="800"
                         data-aos-easing="ease-in-sine" data-aos-anchor="#projects">
                         Contact</h1>
-                    <div class="post" data-aos="fade-left" data-aos-offset="800" data-aos-easing="ease-in-sine" data-aos-anchor="#projects">
+                    <div class="post" data-aos="fade-left" data-aos-offset="800" data-aos-easing="ease-in-sine"
+                        data-aos-anchor="#projects">
                         <div class="box">
                             <div class="box-sm bluegrey"></div>
-                            <div class="box-sm aqua"></div>
+                            <div class="box-sm lightblue"></div>
                             <div class="box-sm bluegrey"></div>
-                            <div class="box-sm aqua"></div>
+                            <div class="box-sm lightblue"></div>
                             <div class="box-sm bluegrey"></div>
                         </div>
                     </div>
-                    <p class="highlight" data-aos="fade-up" data-aos-offset="800" data-aos-easing="ease-in-sine" data-aos-anchor="#projects">Have a question or want to work together?</p>
+                    <p class="highlight contact-question" data-aos="fade-up" data-aos-offset="800"
+                        data-aos-easing="ease-in-sine" data-aos-anchor="#projects">Have a question or want to work
+                        together?</p>
                 </div>
             </div>
-            <section data-aos="fade-up" data-aos-offset="800" data-aos-easing="ease-in-sine" data-aos-anchor="#projects">
+            <section data-aos="fade-up" data-aos-offset="800" data-aos-easing="ease-in-sine"
+                data-aos-anchor="#projects">
                 <div style="justify-content: center; text-align: left;" class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <form id="contact-form" method="post" action="" role="form">
@@ -267,7 +323,7 @@
                                         </div>
                                     </div>
                                     <div style="text-align: right;" class="col-md-12">
-                                        <input type="submit" class="btn btn-success btn-send" value="Submit">
+                                        <input type="submit" class="btn btn-primary btn-send" value="Submit">
                                     </div>
                                 </div>
                             </div>
