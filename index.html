@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <link href="css/style.css" type="text/css" rel="stylesheet">
@@ -24,7 +25,7 @@
         <div class="header-overlay">
         </div>
         <div class="header-content flex row">
-            <h1 class="col-sm-12">Hello, I'm <span class="highlight">Christopher Babis</span></h1>
+            <h1 class="col-sm-12">Hello, I'm <span class="highlighter">Christopher Babis</span></h1>
             <h1 class="col-sm-12">I'm a full-stack web developer.</h1>
         </div>
     </header>
@@ -83,100 +84,123 @@
                     <div class="box-sm bluegrey"></div>
                 </div>
             </div>
-            <div class="row">
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <p class="about-content" data-aos="fade-right" data-aos-offset="800" data-aos-easing="ease-in-sine">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum id
-                        pariatur officia quidem et, delectus facilis quasi reprehenderit omnis qui dolore corporis
-                        dicta. Reprehenderit totam dolore molestias recusandae architecto facere quos distinctio labore
-                        nobis non repellat obcaecati officiis nulla perferendis, doloribus dolor est consequuntur at
-                        alias id, nemo iste. Eligendi culpa accusantium, porro in quis odio sint tempora ex dolore quasi
-                        esse atque dicta dolor libero. Vitae porro hic facilis, numquam tempora, natus aspernatur
-                        necessitatibus animi accusantium reprehenderit excepturi beatae doloremque ipsum odit
-                        repellendus non quisquam. Impedit adipisci dicta distinctio quos eligendi quod error saepe,
-                        voluptates excepturi est velit delectus deleniti doloribus, laudantium voluptas illo cum itaque
-                        consequuntur! Nesciunt, quia. Reiciendis officia, itaque quo aut consequatur laudantium, soluta
-                        eius mollitia earum blanditiis alias perspiciatis hic ad ex rem odit eaque voluptates impedit!
-                        Praesentium modi aspernatur obcaecati? Accusamus culpa quis, fuga alias porro deleniti. Nostrum
-                        rerum ipsa, modi vel autem sapiente?</p>
+            <div class="no-m-container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div id=square>
+                            <i style="z-index: 2" class="material-icons md-dark md-48">question_answer</i>
+                        </div>
+                        <h4 >Inquisitive</h4>
+                        <p class="about-p">Eager to learn a language or approach a task in a new way.</p>
+
+                    </div>
+                  
+                    <div class="col-sm-3">
+                        <div style="z-index: 1" id="square">
+                            <i style="z-index: 2" class="material-icons md-dark md-48">accessibility_new</i>
+                        </div>
+                        <h4 >Flexible</h4>
+                        <p class="about-p">Ability to adapt and respond to issues when they arise.</p>
+                    </div>
+                    <div class="col-sm-3">
+                            <div style="z-index: 1" id="square">
+                                <i style="z-index: 2" class="material-icons md-dark md-48">access_time</i>
+                            </div>
+                            <h4 >Productivity</h4>
+                            <p class="about-p">I set goals and prioritize tasks accordingly.</p>
+                        </div>
+                    <div class="col-sm-3">
+                        <div style="z-index: 1" id="square">
+                            <i style="z-index: 2" class="material-icons md-dark md-48">group</i>
+                        </div>
+                        <h4 >Team Player</h4>
+                        <p class="about-p">Collaboration and communication with my peers is paramount to success.</p>
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <canvas style="width: 590px; height: 400px;"id="myChart" class="about-content" data-aos="fade-left" data-aos-offset="800"
-                        data-aos-easing="ease-in-sine">
+                <br>
+                <div class="flex row">
+                    <div class="col-sm-6">
+                        <img id="picSquare" src="img/cactuscrop2.jpg"></img>
+                        <h4>Who dat?</h4>
+                        <p class="about-content about-p" data-aos="fade-right" data-aos-offset="800"
+                            data-aos-easing="ease-in-sine">
+                            I'm a Full-Stack Web Developer specializing in the front-end, currently honing my skills in HTML, CSS, JavaScript, Bootstrap, and Materialize while receiving certification in Coding/Web Development from the University of Arizona. I have always beesn able to visualize something and in turn, making it come to life. Being able to understand and apply knowledge has always come easily to me; coupled with a strong work ethic and a passion for front end web design.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <canvas id="myChart" class="about-content" data-aos="fade-left" data-aos-offset="800"
+                            data-aos-easing="ease-in-sine">
 
-                    </canvas>
-                </div>
-                <script>
-                    let myChart = document.getElementById("myChart").getContext("2d");
+                        </canvas>
+                    </div>
+                    <script>
+                        let myChart = document.getElementById("myChart").getContext("2d");
 
-                    Chart.defaults.global.defaultFontFamily = "Lato";
+                        Chart.defaults.global.defaultFontFamily = "Lato";
 
-                    let skillsChart = new Chart(myChart, {
-                        type: "horizontalBar",
-                        data: {
-                            labels: ["CSS", "HTML", "React", "JavaScript", "Node.js", "UI Design", "Photoshop", "MongoDB", "Git", "MySQL", "Express"],
-                            datasets: [{
-                                label: 'Percentage',
-                                data: [50, 70, 50, 80, 30, 20, 15, 80, 90, 50, 50
-                                ],
-                                backgroundColor: ["#04C2C9", "#1B242F", "#04C2C9", "#1B242F", "#04C2C9", "#1B242F", "#04C2C9", "#1B242F", "#04C2C9", "#1B242F", "#04C2C9",]
+                        let skillsChart = new Chart(myChart, {
+                            type: "horizontalBar",
+                            data: {
+                                labels: ["CSS", "HTML", "React", "JavaScript", "Node.js", "UI Design", "Photoshop", "MongoDB", "Git", "MySQL",],
+                                datasets: [{
+                                    label: 'Percentage',
+                                    data: [50, 70, 50, 80, 30, 20, 15, 80, 90, 50
+                                    ],
+                                    backgroundColor: ["#04C2C9", "#1B242F", "#04C2C9", "#1B242F", "#04C2C9", "#1B242F", "#04C2C9", "#1B242F", "#04C2C9", "#1B242F", "#04C2C9",]
 
-                            }],
-                            borderWidth: 3,
-                            borderColor: "#333",
-                            hoverBorderWidth: 3
-                        },
-                        options: {
-                            layout: {
-                                padding: {
-                                    left: 100,
-                                    right: 50,
-                                    top: 20,
-                                    bottom: 10
-                                }
-                            },
-                            animation: {
-                                duration: 4000,
-                                easing: 'linear'
-
-                            },
-                            legend: {
-                                display: false
-
-                            },
-                            tooltips: {
-                                enabled: false
-                            },
-                            scales: {
-                                xAxes: [{
-                                    display: false,
-                                    ticks: {
-                                        beginAtZero: true,
-                                    },
-                                    gridLines: {
-                                        color: "rgba(0, 0, 0, 0)",
-                                        
-                                    },
                                 }],
-                                yAxes: [{
-                                    
-                                    gridLines: {
-                                        color: "rgba(0, 0, 0, 0)",
-
-                                    },
-                                    barThickness: 30,
-                                    barPercentage: .1
-                                }]
+                                borderWidth: 3,
+                                borderColor: "#333",
+                                hoverBorderWidth: 3
                             },
+                            options: {
+                                layout: {
+                                    padding: {
+                                        left: 100,
+                                        right: 50,
+                                        top: 20,
+                                        bottom: 10
+                                    }
+                                },
+                                animation: {
+                                    duration: 4000,
+                                    easing: 'linear'
+
+                                },
+                                legend: {
+                                    display: false
+
+                                },
+                                tooltips: {
+                                    enabled: false
+                                },
+                                scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        ticks: {
+                                            beginAtZero: true,
+                                        },
+                                        gridLines: {
+                                            color: "rgba(0, 0, 0, 0)",
+
+                                        },
+                                    }],
+                                    yAxes: [{
+
+                                        gridLines: {
+                                            color: "rgba(0, 0, 0, 0)",
+
+                                        },
+                                        barThickness: 30,
+                                        barPercentage: .1
+                                    }]
+                                },
 
 
-                        }
-                    });
-                </script>
+                            }
+                        });
+                    </script>
+                </div>
             </div>
-        </div>
         </div>
     </header>
     <!-- Project Section-->
