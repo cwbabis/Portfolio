@@ -90,10 +90,12 @@ body {
   display: block;
   padding-bottom: 2rem;
 }
-.highlighter{
+
+.highlighter {
   color: #04C2C9;
   filter: brightness(150%);
 }
+
 /* Button*/
 
 .port-button {
@@ -170,11 +172,12 @@ body {
   padding-top: 60px;
 }
 
-
 /*About Section*/
-h1{
+
+h1 {
   color: #45474A;
 }
+
 h4 {
   color: #626262;
   font-weight: bold;
@@ -182,7 +185,6 @@ h4 {
 
 .about-p {
   color: #626262;
-  
 }
 
 .material-icons.md-dark {
@@ -197,15 +199,36 @@ h4 {
   font-size: 60px;
 }
 
+#icon-spacing {
+  z-index: 1;
+  border-radius: 20px;
+  background: #04C2C9;
+  padding: 16px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin: 15px 15px;
+  justify-items: center;
+  vertical-align: middle;
+}
+
 #square {
   z-index: 1;
   border-radius: 20px;
   background: #04C2C9;
-  padding: 20px;
+  padding: 18px;
   width: 100px;
   height: 100px;
   text-align: center;
   margin: 15px auto;
+}
+
+#margin-fix {
+  justify-content: center;
+}
+
+ion-icon {
+  font-size: 70px;
 }
 
 #picSquare {
@@ -219,7 +242,8 @@ h4 {
   justify-content: center;
   text-align: center;
 }
-  /* Project Section*/
+
+/* Project Section*/
 
 .box {
   display: flex;
@@ -609,7 +633,8 @@ footer .fa-caret-square-up {
 .highlight2 {
   color: #04C2C9
 }
-a:hover{
+
+a:hover {
   text-decoration: none;
 }
 
@@ -675,19 +700,18 @@ a:hover{
     .img__description {
       line-height: 14;
     }
-    #about.no-m-container{
+    #about.no-m-container {
       padding-left: 8%;
       padding-right: 8%;
       height: 150vh;
     }
-    #projects.no-m-container{
+    #projects.no-m-container {
       padding-left: 5%;
       padding-right: 5%;
       height: 125vh;
     }
-    .about-p{
+    .about-p {
       font-size: 13px;
-    }
     }
   }
 }
