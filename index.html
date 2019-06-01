@@ -30,7 +30,7 @@
         </div>
     </header>
     <!-- Navbar -->
-    <div class="nav-jump-fix" style="height:80px;">
+    <div class="nav-jump-fix" style="height:80px;" id="navbar-anchor">
         <div id="navigation-bar">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -71,11 +71,11 @@
 
             <div class="row">
                 <div class="col-sm-12">
-                    <h1 class="about-header" data-aos="fade-left" data-aos-offset="800" data-aos-easing="ease-in-sine">
+                    <h1 class="about-header" data-aos="fade-left" data-aos-duration="1500" data-aos-anchor="#about">
                         About</h1>
                 </div>
             </div>
-            <div class="post" data-aos="fade-right" data-aos-offset="800" data-aos-easing="ease-in-sine">
+            <div class="post" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor="#about">
                 <div class="box">
                     <div class="box-sm bluegrey"></div>
                     <div class="box-sm lightblue"></div>
@@ -84,51 +84,62 @@
                     <div class="box-sm bluegrey"></div>
                 </div>
             </div>
-            <div class="no-m-container">
+            <div class="no-m-container" id="flip-icons">
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-3" data-aos="flip-right" data-aos-duration="700" data-aos-anchor="#about">
                         <div id=square>
                             <i style="z-index: 2" class="material-icons md-dark md-48">question_answer</i>
                         </div>
-                        <h4 >Inquisitive</h4>
+                        <h4>Inquisitive</h4>
                         <p class="about-p">Eager to learn a language or approach a task in a new way.</p>
 
                     </div>
-                  
-                    <div class="col-sm-3">
+
+                    <div class="col-sm-3" data-aos="flip-right" data-aos-duration="700" data-aos-delay="200"
+                        data-aos-anchor="#about">
                         <div style="z-index: 1" id="square">
                             <i style="z-index: 2" class="material-icons md-dark md-48">accessibility_new</i>
                         </div>
-                        <h4 >Flexible</h4>
+                        <h4>Flexible</h4>
                         <p class="about-p">Ability to adapt and respond to issues when they arise.</p>
                     </div>
-                    <div class="col-sm-3">
-                            <div style="z-index: 1" id="square">
-                                <i style="z-index: 2" class="material-icons md-dark md-48">access_time</i>
-                            </div>
-                            <h4 >Productivity</h4>
-                            <p class="about-p">I set goals and prioritize tasks accordingly.</p>
+                    <div class="col-sm-3" data-aos="flip-right" data-aos-duration="700" data-aos-delay="400"
+                        data-aos-anchor="#about">
+                        <div style="z-index: 1" id="square">
+                            <i style="z-index: 2" class="material-icons md-dark md-48">access_time</i>
                         </div>
-                    <div class="col-sm-3">
+                        <h4>Productivity</h4>
+                        <p class="about-p">I set goals and prioritize tasks accordingly.</p>
+                    </div>
+                    <div class="col-sm-3" data-aos="flip-right" data-aos-duration="700" data-aos-delay="600"
+                        data-aos-anchor="#about">
                         <div style="z-index: 1" id="square">
                             <i style="z-index: 2" class="material-icons md-dark md-48">group</i>
                         </div>
-                        <h4 >Team Player</h4>
+                        <h4>Team Player</h4>
                         <p class="about-p">Collaboration and communication with my peers is paramount to success.</p>
                     </div>
                 </div>
                 <br>
-                <div class="flex row">
+                <div class="row">
                     <div class="col-sm-6">
-                        <img id="picSquare" src="img/cactuscrop2.jpg"></img>
-                        <h4>Who dat?</h4>
-                        <p class="about-content about-p" data-aos="fade-right" data-aos-offset="800"
-                            data-aos-easing="ease-in-sine">
-                            I'm a Full-Stack Web Developer specializing in the front-end, currently honing my skills in HTML, CSS, JavaScript, Bootstrap, and Materialize while receiving certification in Coding/Web Development from the University of Arizona. I have always beesn able to visualize something and in turn, making it come to life. Being able to understand and apply knowledge has always come easily to me; coupled with a strong work ethic and a passion for front end web design.</p>
+                        <img id="picSquare" src="img/cactuscrop2.jpg" data-aos="fade-right" data-aos-duration="700"
+                            data-aos-anchor="#flip-icons"></img>
+                        <h4 data-aos="fade-right" data-aos-duration="700" data-aos-anchor="#flip-icons">Who is that?
+                        </h4>
+                        <p style="font-size: 13px;" class="about-content about-p" data-aos="fade-right"
+                            data-aos-offset="800" data-aos-easing="ease-in-sine" data-aos-anchor="flip-icons"
+                            id="paragraph-anchor">
+                            I'm a Full-Stack Web Developer specializing in the front-end, currently honing my skills in
+                            HTML, CSS, JavaScript, Bootstrap, and Materialize while receiving certification in
+                            Coding/Web Development from the University of Arizona. I have always beesn able to visualize
+                            something and in turn, making it come to life. Being able to understand and apply knowledge
+                            has always come easily to me; coupled with a strong work ethic and a passion for front end
+                            web design.</p>
                     </div>
                     <div class="col-sm-6">
-                        <canvas id="myChart" class="about-content" data-aos="fade-left" data-aos-offset="800"
-                            data-aos-easing="ease-in-sine">
+                        <canvas style="height: 450px; width: 600px;" id="myChart" class="about-content"
+                            data-aos="fade-up-left" data-aos-anchor="#about">
 
                         </canvas>
                     </div>
@@ -140,10 +151,10 @@
                         let skillsChart = new Chart(myChart, {
                             type: "horizontalBar",
                             data: {
-                                labels: ["CSS", "HTML", "React", "JavaScript", "Node.js", "UI Design", "Photoshop", "MongoDB", "Git", "MySQL",],
+                                labels: ["CSS  |  80%", "HTML  |  90%", "React  |  70%", "JavaScript  |  70%", "Node.js  |  60%", "UI Design  |  70%", "Photoshop  |  40%", "MongoDB  |  50%", "Git  |  90%", "MySQL  |  60%"],
                                 datasets: [{
                                     label: 'Percentage',
-                                    data: [50, 70, 50, 80, 30, 20, 15, 80, 90, 50
+                                    data: [80, 90, 70, 70, 60, 70, 40, 50, 90, 60
                                     ],
                                     backgroundColor: ["#04C2C9", "#1B242F", "#04C2C9", "#1B242F", "#04C2C9", "#1B242F", "#04C2C9", "#1B242F", "#04C2C9", "#1B242F", "#04C2C9",]
 
@@ -153,12 +164,13 @@
                                 hoverBorderWidth: 3
                             },
                             options: {
+                                responsive: false,
                                 layout: {
                                     padding: {
-                                        left: 100,
-                                        right: 50,
-                                        top: 20,
-                                        bottom: 10
+                                        left: 0,
+                                        right: 0,
+                                        top: 0,
+                                        bottom: 0
                                     }
                                 },
                                 animation: {
@@ -170,10 +182,15 @@
                                     display: false
 
                                 },
+
                                 tooltips: {
                                     enabled: false
                                 },
                                 scales: {
+                                    pointLabels: {
+                                        defaultFontStyle: "bold",
+                                        fontSize: "20px"
+                                    },
                                     xAxes: [{
                                         display: false,
                                         ticks: {
@@ -184,7 +201,8 @@
 
                                         },
                                     }],
-                                    yAxes: [{
+                                    yAxes: [{/* 
+                                        ticks: { mirror: true }, */
 
                                         gridLines: {
                                             color: "rgba(0, 0, 0, 0)",

@@ -182,6 +182,7 @@ h4 {
 
 .about-p {
   color: #626262;
+  
 }
 
 .material-icons.md-dark {
@@ -246,7 +247,7 @@ h4 {
 }
 
 .lightblue {
-  background-color: #92c5ff;
+  background-color: #04C2C9;
 }
 
 .bluegrey {
@@ -549,13 +550,13 @@ iframe {
 /*Return Home Button*/
 
 footer .fa-caret-square-up {
-  color: #92c5ff;
-  top: -25px;
+  color: #04C2C9;
+  top: -30px;
   margin: 0 auto;
   left: 0;
   right: 0;
-  width: 47px;
-  height: 50px;
+  width: 35px;
+  height: 40px;
   position: absolute;
   cursor: pointer;
   transition: background .5s;
@@ -596,6 +597,7 @@ footer .fa-caret-square-up {
   margin-top: 35px;
   text-align: center;
   background-color: #1B242F;
+  padding: 15px;
 }
 
 /*Highlighter*/
@@ -606,6 +608,9 @@ footer .fa-caret-square-up {
 
 .highlight2 {
   color: #04C2C9
+}
+a:hover{
+  text-decoration: none;
 }
 
 /* MEDIA QUERY TEMPLATE */
@@ -657,19 +662,32 @@ footer .fa-caret-square-up {
   /* Styles */
   @media screen and (min-width: 1025px) and (max-width: 1500px) {
     body {
-      background-color: pink;
+      background-color: white;
     }
-    .zoom-effect-container {
+    /* .zoom-effect-container {
       height: 215px;
       width: 280px;
-    }
+    } */
     .contact-section {
-      /* background-color: #1B242F; */
       height: 75vh;
-      padding: 0px 350px 0 350px;
+      padding: 0px 400px 0 400px;
     }
     .img__description {
       line-height: 14;
+    }
+    #about.no-m-container{
+      padding-left: 8%;
+      padding-right: 8%;
+      height: 150vh;
+    }
+    #projects.no-m-container{
+      padding-left: 5%;
+      padding-right: 5%;
+      height: 125vh;
+    }
+    .about-p{
+      font-size: 13px;
+    }
     }
   }
 }
@@ -679,7 +697,7 @@ footer .fa-caret-square-up {
 @media only screen and (min-width: 1824px) {
   /* Styles */
   .contact-header {
-    padding-top: 70px;
+    padding-top: 60px;
   }
   /* iPhone 4 ----------- */
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
