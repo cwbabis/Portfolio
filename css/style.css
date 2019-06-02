@@ -310,20 +310,28 @@ ion-icon {
   bottom: 0;
   left: 0;
   right: 0;
-  background: black;
-  color: #fff;
+  background: #f5f5f5;
+  color: #1B242F;
   visibility: hidden;
-  opacity: 0.5;
-  line-height: 18;
-  /* transition effect. not necessary */
-  /* 
-  transition: opacity .2s, visibility .2s; */
+  opacity: 0;
+  line-height: 14;
+  font-size: 20px;
+  font-weight: bold;
 }
+
+/* transition effect. not necessary */
+
+/* 
+  transition: opacity .2s, visibility .2s; */
 
 .img__wrap:hover .img__description {
   visibility: visible;
-  opacity: 0.5;
+  opacity: 1;
   margin: 0;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
 }
 
 div.gallery {
@@ -683,35 +691,35 @@ a:hover {
 
 /* Desktops and laptops ----------- */
 
-@media only screen and (min-width: 1224px) {
-}
-  /* Styles */
-  @media screen and (min-width: 1025px) and (max-width: 1500px) {
-    body {
-      background-color: white;
-    }
-    .contact-section {
-      height: 75vh;
-      padding: 0px 400px 0 400px;
-    }
-    .img__description {
-      line-height: 14;
-    }
-    #about.no-m-container {
-      padding-left: 8%;
-      padding-right: 8%;
-      height: 150vh;
-    }
-    #projects.no-m-container {
-      padding-left: 5%;
-      padding-right: 5%;
-      height: 125vh;
-    }
-    .about-p {
-      font-size: 13px;
-    }
-  }
+@media only screen and (min-width: 1224px) {}
 
+/* Styles */
+
+@media screen and (min-width: 1025px) and (max-width: 1500px) {
+  body {
+    background-color: white;
+  }
+  .contact-section {
+    height: 75vh;
+    padding: 0px 400px 0 400px;
+  }
+  .img__description {
+    line-height: 14;
+  }
+  #about.no-m-container {
+    padding-left: 8%;
+    padding-right: 8%;
+    height: 150vh;
+  }
+  #projects.no-m-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 125vh;
+  }
+  .about-p {
+    font-size: 13px;
+  }
+}
 
 /* Large screens ----------- */
 
