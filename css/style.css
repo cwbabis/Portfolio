@@ -319,6 +319,7 @@ ion-icon {
   font-weight: bold;
 }
 
+
 /* transition effect. not necessary */
 
 /* 
@@ -620,10 +621,17 @@ footer .fa-caret-square-up {
 /* Name and Copyright*/
 
 .footnote {
-  margin-top: 35px;
   text-align: center;
   background-color: #1B242F;
-  padding: 15px;
+  padding: 35px;
+}
+
+.project-github {
+  color: #45474A;
+}
+
+.project-github:hover {
+  color: #04C2C9;
 }
 
 .fa-linkedin:hover {
@@ -791,7 +799,7 @@ a:hover {
     padding: 0px 400px 0 400px;
   }
   .img__description {
-    line-height: 14;
+    font-size: 14px;
   }
   #about.no-m-container {
     padding-left: 8%;
