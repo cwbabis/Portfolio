@@ -16,6 +16,9 @@ div {
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,6 +27,7 @@ body {
   overflow-x: hidden;
   text-align: center;
   font-family: 'Oxygen', sans-serif;
+  position: relative
 }
 
 .v-header {
