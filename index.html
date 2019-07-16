@@ -38,6 +38,11 @@
             <h1 class="col-sm-12">I'm a full-stack web developer.</h1>
         </div>
     </header>
+    <script>
+        var mobilevideo = document.getElementsByTagName("video")[0];
+        mobilevideo.setAttribute("playsinline", "");
+        mobilevideo.setAttribute("muted", "");
+    </script>
     <!-- Navbar -->
     <div class="nav-jump-fix" style="height:80px;" id="navbar-anchor">
         <div id="navigation-bar">
@@ -100,12 +105,12 @@
                     <div class="col-sm-3" data-aos="flip-right" data-aos-duration="700" data-aos-anchor="#about"
                         data-aos-anchor-placement="top-center">
                         <div id=square>
-                                <i style="z-index: 2" class="material-icons md-dark md-48">search</i>
+                            <i style="z-index: 2" class="material-icons md-dark md-48">search</i>
                         </div>
                         <h4>Inquisitive</h4>
                         <p class="about-p">Eager to learn a language or approach a task in a new way.</p>
                     </div>
-                    
+
                     <div class="col-sm-3" data-aos="flip-right" data-aos-duration="700" data-aos-delay="200"
                         data-aos-anchor="#about" data-aos-anchor-placement="top-center">
                         <div style="z-index: 1" id="square">
@@ -370,7 +375,8 @@
                 data-aos-anchor-placement="bottom-bottom">
                 <div style="justify-content: center; text-align: left;" class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <form id="contact-form" action="https://formspree.io/chris@chrisbabis.com" method="post" action="" role="form">
+                        <form id="contact-form" action="https://formspree.io/chris@chrisbabis.com" method="post"
+                            action="" role="form">
                             <div class="messages"></div>
                             <div class="controls">
                                 <div class="row">
