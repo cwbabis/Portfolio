@@ -107,9 +107,7 @@ body {
   cursor: pointer;
 }
 
-.btn-primary {
-  background-color: transparent;
-}
+
 
 @media(max-width:960px) {
   .container {
@@ -187,6 +185,7 @@ h4 {
 
 .about-p {
   color: #626262;
+  font-size: .80rem;
 }
 
 .material-icons.md-dark {
@@ -406,7 +405,12 @@ div.gallery:hover {
 }
 
 .btn-primary {
-  background-color: #92c5ff;
+  background-color: #1B242F;
+  border-color: #ced4da;
+}
+.btn-primary:hover {
+  background-color: #04C2C9;
+  border-color: #ced4da;
 }
 
 /*---------------------------------------------*/
@@ -745,7 +749,7 @@ a:hover {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Styles */
   .about-p {
-    font-size: 10px;
+    font-size: .80rem;
   }
   #about.no-m-container {
     padding-left: 8%;
@@ -759,7 +763,7 @@ a:hover {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* Styles */
   .about-p {
-    font-size: 10px;
+    font-size: .80rem;
   }
   #about.no-m-container {
     padding-left: 8%;
@@ -773,7 +777,7 @@ a:hover {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* Styles */
   .about-p {
-    font-size: 10px;
+    font-size: .80rem;
   }
   #about.no-m-container {
     padding-left: 8%;
@@ -787,7 +791,7 @@ a:hover {
 @media only screen and (min-width: 1224px) {}
 
 .about-p {
-  font-size: 10px;
+  font-size: .80rem;
 }
 
 /* Styles */
