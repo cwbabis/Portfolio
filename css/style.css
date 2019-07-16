@@ -16,7 +16,6 @@ div {
   box-sizing: border-box;
 }
 
-
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -25,7 +24,6 @@ body {
   overflow-x: hidden;
   text-align: center;
   font-family: 'Oxygen', sans-serif;
-
 }
 
 .v-header {
@@ -106,8 +104,6 @@ body {
   transition: all .5s;
   cursor: pointer;
 }
-
-
 
 @media(max-width:960px) {
   .container {
@@ -320,7 +316,6 @@ ion-icon {
   font-weight: bold;
 }
 
-
 /* transition effect. not necessary */
 
 /* 
@@ -409,6 +404,7 @@ div.gallery:hover {
   border-color: #ced4da;
   color: #999;
 }
+
 .btn-primary:hover {
   background-color: #04C2C9;
   border-color: white;
@@ -713,7 +709,7 @@ a:hover {
   #projects.no-m-container {
     padding-left: 10%;
     padding-right: 10%;
-    height: 225vh;
+    height: 325vh;
   }
   .img__img {
     height: 300px;
@@ -840,9 +836,6 @@ a:hover {
     /* Styles */
   }
   @media screen and (min-width: 1024px) and (max-width: 1300px) {
-    body {
-      background-color: red;
-    }
     .project-background {
       padding-top: 50px;
     }
@@ -857,14 +850,24 @@ a:hover {
       padding: 20px;
     }
   }
-  @media screen and (max-width:860px) {
-    body {
-      background-color: yellow;
+  /*   @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .project-view {
+      height: 1000vh;
     }
   }
-  @media screen and (max-width: 600px) {
-    body {
-      background-color: orange;
+  @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    .project-view {
+      height: 1000vh;
+    }
+  }
+  @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+    .project-view {
+      height: 1000vh;
+    }
+  } */
+  @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+    .project-view {
+      height: 1000vh;
     }
   }
 }
