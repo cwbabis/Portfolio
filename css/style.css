@@ -405,12 +405,13 @@ div.gallery:hover {
 }
 
 .btn-primary {
-  background-color: #1B242F;
+  background-color: white;
   border-color: #ced4da;
+  color: #999;
 }
 .btn-primary:hover {
   background-color: #04C2C9;
-  border-color: #ced4da;
+  border-color: white;
 }
 
 /*---------------------------------------------*/
