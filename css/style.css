@@ -730,6 +730,10 @@ a:hover {
     display: block;
     height: 20vh;
   }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 }
 
 @media only screen and (max-width: 320px) {
